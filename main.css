@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 5px 50px 0 50px;
+    background: #333;
+}
+
+#header h1 {
+    font-size: 50px;
+    font-style: italic;
+    color: peachpuff;
+    user-select: none;
+}
+
+#header span {
+    font-size: 25px;
+    color: peachpuff;
+    user-select: none;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.css, .html, .js {
+    display: flex;
+    flex-direction: row;
+}
+
+.css_img, .html_img, .js_img {
+    width: 250px;
+    height: 250px;
+    margin: 50px 20px 50px 20px;
+    user-select: none;
+}
+
+.css_block, .html_block, .js_block {
+    display: flex;
+    align-items: center;
+}
+
+.css_link, .html_link, .js_link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    user-select: none;
+}
+
+.css_link:hover, .html_link:hover, .js_link:hover {
+    transition: 0.1s all;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.side-text {
+    width: 30%;
+    color: peachpuff;
+}
+
+.side-text h1 {
+    font-size: 80px;
+}
+
+.side-text p {
+    font-size: 25px;
+}
+
+p {
+    margin: 20px 0 0 0;
+}
+
+.text h1 {
+    margin: 20px 50px 20px 0;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+    .css_img, .html_img, .js_img {
+        width: 200px;
+    }
+
+    .side-text h1 {
+        font-size: 60px;
+    }
+
+    .side-text p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #header h1 {
+        font-size: 30px;
+    }
+
+    #header span {
+        font-size: 15px;
+    }
+
+    .css_img, .html_img, .js_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .side-text {
+        width: 200px;
+    }
+
+    .side-text h1 {
+        font-size: 50px;
+    }
+
+    .side-text p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .css_img, .html_img, .js_img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-text {
+        width: 100%;
+    }
+}
