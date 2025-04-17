@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/homework.css">
+</head>
+<body>
+<div class="pagewrap">
+    <a name="home"></a>
+    <header id="header">
+        <div class="header-content">
+            <div class="site-block">
+                <p class="site-text">Just.com</p>
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="homework.html" class="sidenav-text">Главная страница</a>
+                <a href="sign-in.html" class="enter">Войти</a>
+                <a href="#" class="sidenav-text">Профиль</a>
+                <a href="#" class="sidenav-text">Корзина</a>
+            </div>
+
+            <div class="container" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div class="search-form">
+                <input class="search-form__txt" type="text" placeholder="Search..." >
+                <button class="search-form__btn"><img class="search-form__image" src="search-interface-symbol.png" alt="image"></button>
+            </div>
+
+            <div class="main-enter-block">
+                <a href="sign-in.html" class="main-enter">Войти</a>
+            </div>
+        </div>
+    </header>
+</div>
+<script src="js/sidenav.js"></script>
+</body>
+</html>
