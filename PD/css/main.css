@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+    background: #fafafa;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#pagewrap, .header_main, .header_text, header,
+.main_text, #main, .text-m, .text-m-2,
+.text-p, #footer, .footer_content, #header,
+.text-m-3, .text-m-4, .text-m-5, .emblem,
+.emblem-block, #video-block, .video {
+    display: block;
+}
+
+#header {
+    background-color: rgb(67, 87, 176);
+    border-bottom: 1px solid dodgerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_text {
+    margin: 0 50px 0 50px;
+    font-size: 55px;
+    font-weight: bold;
+    position: relative;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.k {
+    position: relative;
+    color: deepskyblue;
+    margin: 0 2px 0 0;
+}
+
+.s {
+    position: relative;
+    color: red;
+    margin: 0 2px 0 0;
+}
+
+.a {
+    position: relative;
+    color: darkslateblue;
+    margin: 0;
+}
+
+.ksa {
+    position: relative;
+    display: flex;
+    font-style: normal;
+    flex-direction: row;
+}
+
+.emblem-block {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.emblem {
+    height: 200px;
+    user-select: none;
+    clip-path: circle(45%);
+}
+
+#main {
+    height: 100%;
+    font-size: 20px;
+    margin: 20px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-m, .text-m-2,
+.text-m-3, .text-m-4, .text-m-5 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.text-m-2, .text-m-4, .text-m-5 {
+    margin: 20px 0 0 0;
+}
+
+.text-p {
+    margin: 15px 0 0 0;
+    font-size: 25px;
+}
+
+.first-text-main-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-text-img {
+    width: 700px;
+    user-select: none;
+    margin: 0 0 0 20px;
+    opacity: 0.5;
+}
+
+.second-text-main-block {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px 0 0 0;
+}
+
+.second-text-img {
+    width: 700px;
+    user-select: none;
+    margin: 0 20px 0 0;
+    opacity: 0.5;
+}
+
+#video-block {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.video-block {
+    height: 500px;
+    width: 1000px;
+}
+
+@media screen and (max-width: 1500px) {
+    .first-text-img {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .first-text-main-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-text-img {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .second-text-main-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emblem-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    #video-block {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video {
+        height: 100%;
+        width: 100%;
+    }
+
+    .youtube_logo {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .emblem {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-p {
+        font-size: 20px;
+    }
+
+    .text-m, .text-m-2, .text-m-3,
+    .text-m-4, .text-m-5 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .first-text-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .first-text-main-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-text-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-text-main-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emblem-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .emblem {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin: 50px 0 0 0;
+}
+
+.footer_content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px 0 50px;
+}
+
+.insta_logo {
+    height: 80px;
+    position: relative;
+    user-select: none;
+}
+
+.youtube_logo {
+    margin: 0 0 0 50px;
+    height: 80px;
+    position: relative;
+    user-select: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: rgba(49, 69, 168);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fafafa;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    margin: 0 27px 0 0;
+    user-select: none;
+    z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
