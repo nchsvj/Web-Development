@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    background-color: peachpuff;
+}
+
+#pagewrap {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: peru;
+    transition: all 1s ease;
+}
+
+.images {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.images:hover {
+    transition: all 0.3s ease-in-out;
+    width: 205px;
+    height: 305px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: flow;
+    color: peru;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.books-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+@media screen and (min-width: 1279px) {
+    .books-div:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .books-div:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    a:hover {
+        transition: none;
+        font-size: 15px;
+    }
+
+    .images:hover {
+        transition: none;
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .books-div:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .books-div {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    a:hover {
+        transition: none;
+        font-size: 15px;
+    }
+
+    .images:hover {
+        transition: none;
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        font-size: 45px;
+    }
+
+    .images {
+        width: 100%;
+        height: 300px;
+    }
+
+    .images:hover {
+        transition: none;
+        width: 100%;
+        height: 300px;
+    }
+
+    a:hover {
+        transition: none;
+        font-size: 15px;
+    }
+}
